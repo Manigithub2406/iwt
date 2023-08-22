@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    button{
+            border: 2px solid ;
+            text-align: center;
+            padding: 20px;
+            width: 20px;
+            background-color: rgb(238, 158, 9);
+        }
+        #dis{
+            border: 2px solid black;
+            width: 210px;
+            height: 35px;
+        }
+</style>
+<body>
+    <center>
+        <table>
+            <tr><input type="text" id="dis"></tr>
+        <tr>
+    
+       <td><button onclick="number(9)">9</button></td>
+       <td><button onclick="number(8)">8</button></td>
+       <td><button onclick="number(7)">7</button></td>
+       <td><button onclick="operator('+')">+</button></td> </tr>
+       <tr>
+        <td><button onclick="number(6)">6</button></td>
+        <td><button onclick="number(5)">5</button></td>
+        <td><button onclick="number(4)">4</button></td>
+        <td><button onclick="operator('-')">-</button></td> </tr>
+       <tr>
+        <td> <button onclick="number(3)" >3</button></td>
+        <td><button onclick="number(2)">2</button></td>
+        <td> <button onclick="number(1)">1</button></td>
+        <td> <button onclick="operator('*')">*</button> </td></tr>
+       <tr>
+        <td>  <button onclick="clearing()">C</button></td>
+        <td> <button onclick="number(0)">0</button></td>
+        <td> <button onclick="operator('/')">/</button></td>
+        <td>  <button onclick="cal()">=</button></td>
+    </tr>
+    </table>
+    </center>
+    <script>
+        let a='';
+        const res=document.getElementById("dis");
+        function number(x){
+            a+=x;
+            res.value=a;
+        }
+        function operator(x){
+            a+=x;
+            res.value=a;
+        }
+        function clearing(){
+            a='';
+            res.value='';
+        }
+        function cal(){
+            const result=eval(a);
+            res.value=result;
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<employee_info>
+<emp>
+<empid>167</empid>
+<empname>Sharath</empname>
+<empsalary>5000</empsalary>
+<empjob>Data_Sciencist</empjob>
+</emp>
+<emp>
+<empid>166</empid>
+<empname>Vivek</empname>
+<empsalary>1000</empsalary>
+<empjob>Software</empjob>
+</emp>
+</employee_info>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE car SYSTEM "dtd_file_car.xml">
+<car>
+	<budget>
+		<low>
+			<maruthi>
+				
+				<petrol>
+					<price>300000</price>
+					<available>
+						YES
+					</available>
+
+				</petrol>
+				<disel>
+					<price>300000</price>
+					<available>
+						NO
+					</available>
+
+				</disel>
+			</maruthi>
+			<alto>
+				
+				<petrol>
+					<price>300000</price>
+					<available>
+						YES
+					</available>
+
+				</petrol>
+				<disel>
+					<price>250000</price>
+					<available>
+						NO
+					</available>
+
+				</disel>
+			</alto>
+			
+		</low>
+		<medium>
+			<swift>
+				<petrol>
+					<price>4000000</price>
+					<available>
+						NO
+					</available>
+
+				</petrol>
+				<disel>
+					<price>4000000</price>
+					<available>
+						YES
+					</available>
+
+				</disel>
+			
+			</swift>
+			<brezza>
+				<petrol>
+					<price>4500000</price>
+					<available>
+						NO
+					</available>
+
+				</petrol>
+				<disel>
+					<price>4000000</price>
+					<available>
+						YES
+					</available>
+
+				</disel>
+			
+			</brezza>
+			
+		</medium>
+		<high>
+			<Kia>
+				
+				<petrol>
+					<price>6000000</price>
+					<available>
+					YES
+					</available>
+
+				</petrol>
+				<disel>
+					<price>6000000</price>
+					<available>
+						YES
+					</available>
+
+				</disel>
+			</Kia>
+			<innova>
+				
+				<petrol>
+					<price>6500000</price>
+					<available>
+						YES
+					</available>
+
+				</petrol>
+				<disel>
+					<price>6500000</price>
+					<available>
+						YES
+					</available>
+
+				</disel>
+			</innova>
+		</high>
+		<luxarious>
+			<BMW>
+				<petrol>
+					<price>8000000</price>
+					<available>
+						YES
+					</available>
+
+				</petrol>
+				<disel>
+					<price>8000000</price>
+					<available>
+						YES
+					</available>
+
+				</disel>
+			</BMW>
+			<audi>
+				
+				<petrol>
+					<price>8500000</price>
+					<available>
+						YES
+					</available>
+
+				</petrol>
+				<disel>
+					<price>7000000</price>
+					<available>
+						YES
+					</available>
+
+				</disel>
+			</audi>
+		</luxarious>
+	</budget>
+</car>

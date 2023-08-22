@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    // Javascript program for the above approach
+
+// Function to check if char ch is
+// odd or not
+function checkOdd(ch)
+{
+	return (parseInt(ch) & 1);
+}
+
+// Function to insert dash - between
+// any 2 consecutive digit in string str
+function Insert_dash(num_str)
+{
+
+	let result_str = "";
+
+	// Traverse the string character
+	// by character
+	for (let x = 0;
+		x < num_str.length - 1; x++) {
+
+		// Compare every consecutive
+		// character with the odd value
+		if (checkOdd(num_str[x])
+			&& checkOdd(num_str[x + 1])) {
+
+			result_str+=(num_str[x]+ "-");
+		}
+		else{
+			result_str+=num_str[x];
+		}
+		
+	}
+	
+	result_str+=num_str[num_str.length-1];
+	// Print the resultant string
+	return result_str;
+}
+
+// Driver Code
+	// Given number in form of string
+	let str = "1745389";
+
+	// Function Call
+	document.write(Insert_dash(str));
+</body>
+</html>

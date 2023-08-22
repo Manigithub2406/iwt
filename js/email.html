@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Validation</title>
+    <style>
+        body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+        h1{
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        #email{
+            margin-left: 480px;
+            width: 344px;
+      padding: 10px;
+      margin-bottom: 20px;
+        }
+        button{
+            background-color: #4CAF50;
+            color: #fff;
+            margin-left: 610px;
+            padding: 10px;
+            width: 100px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1><b>Email Validation</b></h1>
+    <form action="" id="emailForm">
+        <input type="text" id="email" placeholder="enter your email"><br><br>
+        <button  onclick="func()" type="submit">Submit</button>
+    </form>
+    <script>
+        function func()
+            {
+                var x=document.getElementById("email").value;
+                var y=/^[a-z]{1,20}\d{1,6}\@[a-z]{2,10}\.[a-z]{3}$/;
+                if(x.match(y))
+                {
+                    alert("valid email");
+                }
+                else
+                {
+                    alert("invalid email");
+                }
+            }
+    </script>
+</body>
+</html>

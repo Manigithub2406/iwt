@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>image moving</title>
+</head>
+<body>
+    <h1>moving image</h1>
+    <form>
+        top<input type="text" id="t1" size="20"> left<input type="text" id="l1" size="20">
+        <button type="button" onclick="move('id1',document.getElementById('t1').value,document.getElementById( 'l1').val ue)">ok</button>
+    </form>
+        <img src="download.png" style="width:200px;height=200px;position:absolute;left:0px;top:100px"	alt="cbit" id="id1">
+</body>
+<script language="javascript">
+
+function move(id1,newtop,newleft)
+{
+var x=document.getElementById("id1").style; x.top=newtop+"px";
+x.left=newleft+"px";
+}
+</script>
+</html>

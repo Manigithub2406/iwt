@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOW</title>
+    <style>
+        table,tr,th,td{
+            border:2px solid black;        }
+    </style>
+</head>
+
+<body>
+    <a href="{% url 'create' %}">ADD</a>
+    <table>
+        <tr>
+            <th>
+                Student no
+            </th>
+            <th>
+                Student name
+            </th>
+            <th>
+                Student marks
+            </th>
+            <th colspan="2">
+                actions
+            </th>
+        </tr>
+        {% for obj in objs %}
+            <tr>
+                <td>{{obj.sno}}</td>
+                <td>{{obj.sname}}</td>
+                <td>{{obj.smarks}}</td>
+                <td><a href="{% url 'delete' obj.id %}">delete</a></td>&nbsp;&nbsp;
+                <td><a href="{% url 'update' obj.id %}">update</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

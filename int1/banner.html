@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner</title>
+    <style>
+        header {
+
+            background: radial-gradient(yellow,orange);
+            height: 50px;
+            width: 80%;
+        }
+
+        .lefter {
+            float: left;
+            width: 200px;
+            border-top: 5px solid black;
+            border-right: 5px solid  black;
+
+
+        }
+
+        .holder {
+            display: flex;
+            justify-content: space-around;
+
+        }
+        .frame{
+            border-top: 5px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <main style="background-color: grey; width: 540px;">
+        <header>
+            <h1>
+                <center> Banner</center>
+            </h1>
+        </header>
+        <div class="holder">
+            <div class="lefter">
+                <h2>Table of content</h2>
+                <ul>
+                    <li><a href="https://www.cbit.ac.in/" target="browser">cbit home</a></li>
+                    <li><a href="https://www.wikipedia.org/"
+                            target="browser" >wikipedia</a></li>
+                </ul>
+            </div class="frame">
+            <iframe src="" frameborder="7" srcdoc="
+                <h3>Defination List</h3>
+                <dl>
+                    <dt>Subject1</dt>
+                    <dd>Catogary 1 information</dd>
+                    <dt>Subject2</dt>
+                    <dd>Catogary 2 information </dd>
+                </dl>"
+             name="browser" height="500px" width="60%"></iframe>
+
+        </div>
+
+    </main>
+</body>
+
+</html>

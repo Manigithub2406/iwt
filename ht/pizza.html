@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza order</title>
+    <style>
+        main{
+            background-image: url(whitebackground.avif);
+            background-attachment: fixed;
+            background-size: cover;
+            background-color: aquamarine;
+        }
+        .pictures{
+            display: flex;
+            justify-content: space-around;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <header> <center><h1>PIZZA HUT</h1></center></header>
+        <body>
+
+            <fieldset>
+                <legend><strong>TYPES OF PIZZA</strong></legend>
+                <ul>
+
+                    <li>Poop pizza.......................Rs.200/-</li>
+                    <li>Seafood............................Rs.250/-</li>
+                    <li>Peperoni pizza.................Rs.180/-</li>
+                    <li>Cow Brains Pizza............Rs.260/-</li>
+                    <li>Cheese Pizza...................Rs.150/-</li>
+
+                </ul>
+            </fieldset>
+            <hr>
+            <div class="pictures">
+                <figure>
+                    <img src="p1.avif" alt="poop pizza" height="200px" width="200px">
+                    <figcaption>poop pizza</figcaption>
+                </figure>
+                <figure>
+                    <img src="p2.avif" alt="poop pizza" height="200px" width="200px">
+                    <figcaption>seafood pizza</figcaption>
+                </figure>
+                <figure>
+                    <img src="p3.avif" alt="poop pizza" height="200px" width="200px">
+                    <figcaption>peperoni pizza</figcaption>
+                </figure>
+                <figure>
+                    <img src="p4.avif" alt="poop pizza" height="200px" width="200px">
+                    <figcaption>peperoni pizza</figcaption>
+                </figure>
+                <figure>
+                    <img src="p5.avif" alt="poop pizza" height="200px" width="200px">
+                    <figcaption>peperoni pizza</figcaption>
+                </figure>
+            </div>
+            <hr>
+            <fieldset>
+                <legend><strong>PLACE YOUR ORDER</strong> </legend>
+                <br><br>
+                <!-- <Strong>quantity</Strong>  <br><br> -->
+                <form action="#" >
+                    <div class="inputer">
+                        <label for="poop">poop pizza  </label><input type="number" name="poopp" min="0" max="10"> <br><br>
+                        <label for="Seafood">Seafood pizza  </label><input type="number" name="Seafood" min="0" max="10">  <br><br>
+                        <label for="Peperoni">Peperoni pizza  </label><input type="number" name="Peperoni" min="0" max="10"> <br><br>
+                        <label for="Cow Brains">Cow Brains pizza  </label><input type="number" name="Cow Brains" min="0" max="10"> <br><br>
+                        <label for="Cheese">Cheese pizza  </label><input type="number" name="Cheese" min="0" max="10">  <br><br> <br><br>
+                    </div>
+                    <button type="reset">Reset</button>  &nbsp;&nbsp;
+                    <button type="submit">Place Order</button>
+                </form>
+            </fieldset>
+
+        </body>
+    </main>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarhenhitToCelsisus</title>
+    <style>
+        body{
+            margin: 40vw 40wh;
+        }
+    </style>
+</head>
+<body>
+    <h2>celsius to farenheit conversion</h2>
+    <form action="#" id="parent">
+        <input type="text" name="in" id="in">
+        <input type="button" value="convert" onclick="conversion()">
+    </form>
+    <script>
+        function conversion(){
+            let x1=document.getElementById("in").value;
+            let obj=document.createElement("input");
+            let parent1=document.getElementById("parent");
+            obj.value=5*(x1-32)/9;
+            parent1.appendChild(obj);
+            
+        }
+
+
+    </script>
+</body>
+</html>

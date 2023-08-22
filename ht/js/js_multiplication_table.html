@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>replit</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<label>Enter no. of rows:</label> <input type="text" id="rows"> <br>
+<label>Enter no. of coloumns:</label> <input type="text" id="cols"> <br>
+<button onclick="displayTable()">Click here</button>
+<div id="res"></div>
+<script>
+function displayTable() {
+let r = document.getElementById("rows").value;
+let c = document.getElementById("cols").value;
+r = Number.parseInt(r);
+c = Number.parseInt(c);
+let result = "<table>";
+for (let i = 1; i <= r; i++) {
+result += "<tr>";
+for (let j = 1; j <= c; j++) {
+result += "<td>" + (i * j) + "</td>";
+}
+result += "</tr>";
+}
+result += "</table>";
+document.getElementById("res").innerHTML = result;
+}
+</script>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html>
+ <head>
+ <title>
+ most freq occured value in an array using JavaScript
+ </title>
+ </head>
+ <body>
+ 
+ <button onclick="myFunc()">click hear to find mode</button>
+ </body>
+ <script>
+ function myFunc(){
+ var arr1=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9,9,9,9,9,,9, 3];
+ var mf = 1;
+ var count = 0;
+ var item;
+ for (var i=0; i<arr1.length; i++)
+ {
+ for (var j=i; j<arr1.length; j++)
+ {
+ if (arr1[i] == arr1[j])
+ count++;
+ if (mf<count)
+ {
+ mf=count; 
+ item = arr1[i];
+ }
+ }
+ count=0;
+}
+document.write(item+" ( " +mf +" times ) ") ;
+ }
+ </script>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+ <head>
+ <title>
+ to put dashes in between
+ </title>
+ </head>
+ <body>
+ <p>gives us the dashes in between two even numbers </p>
+ </body>
+ <script>
+ const num=window.prompt();
+const str = num.toString();
+const result = [str[0]];
+ 
+for(let x=1; x<str.length; x++)
+ {
+ if((str[x-1]%2 === 0)&&(str[x]%2 === 0))
+ {
+ result.push('-', str[x]);
+ }
+ else
+ {
+ result.push(str[x]);
+ }
+ }
+document.write(result.join(''));
+ </script>
+</html> -->
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #image {
+      position: absolute;
+      top: 100px;
+      left: 0px;
+      transition: 0.1s 0.1s;
+    }
+  </style>
+  <script>
+    function moveitez() {
+      var a = parseInt(document.getElementById('x_cord').value);
+      var b = parseInt(document.getElementById('y_cord').value);
+
+      var image = document.getElementById('image');
+      image.style.top = b + 'px';
+      image.style.left = a + 'px';
+    }
+  </script>
+
+</head>
+
+<body>
+  <h1>move</h1>
+  <input type="number" id="x_cord">
+  <input type="number" id="y_cord">
+  <button onclick="moveitez()">Submit</button>
+  <div>
+    <img id="image" src="OIP.jpg" width="100" height="100">
+  </div>
+</body>
+
+</html>

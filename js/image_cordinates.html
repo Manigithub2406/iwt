@@ -1,0 +1,181 @@
+<!-- <html>
+<head>
+<title> nochange.html</title>
+<script >
+function computetotal()
+{
+var cpizza= document.getElementById("cp").value;
+var ppizza=document.getElementById("pp").value;
+var vpizza=document.getElementById("vp").value;
+document.getElementById("cost").value=cpizza*100+ppizza*80+vpizza*70;
+}
+function confirmorder()
+{
+confirm("your order is confirmed reach you in 10 minutes");
+}
+function cancelorder()
+{
+alert("your order has been cancelled");
+}
+</script>
+</head>
+<body><form>
+<h3>Pizza order </h3>
+<table border="2" cellspacing="0">
+<tr><th>Item name</th>
+<th>Price</th>
+<th>Quantity</th>
+</tr>
+<tr>
+<td>Chicken Pizza</td>
+<td>100</td>
+<td> <input type="text" id="cp" size="5"/></td>
+</tr>
+<tr><td>Paneer Pizza</td>
+<td>80</td>
+<td><input type="text" id="pp" size="5"/></td>
+</tr>
+<tr><td>Veg Pizza</td>
+<td>70</td>
+<td><input type="text" id="vp" size="5"/></td>
+</tr></table>
+<p>
+<input type="button" value="totalcost" onclick="computetotal();"/>
+<input type="text" size="5" id="cost" />
+</p>
+create sumbit and reset buttons
+<input type="submit" value="confirm order" onclick="confirmorder()"/>
+<input type = "Reset" value="Cancel order" onclick= "cancelorder()"/>
+</form>
+</body>
+</html> -->
+
+
+<!-- <html>
+<body>
+<h1 onmouseover="style.color='red'"
+onmouseout="style.color='black'">onclick event</h1></body>
+<h1 onclick="style.color='red'">click</h1>
+<h1 onmousedown="style.color='blue'" onmouseup="style.color='green'">mousedown</h1>
+<h1 ondblclick="style.color='powderblue'">double click</h1>
+<h1 onmousemove="style.color='pink'">mouse move</h1>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="myElement">Hello, World!</div>
+  <button onclick="changeStyles()">Change Styles</button>
+
+  <script>
+    function changeStyles() {
+  // Get the element to modify
+  var element = document.getElementById("myElement");
+
+  // Change the background color
+  element.style.backgroundColor = "lightblue";
+
+  // Change the text color
+  element.style.color = "red";
+
+  // Change the font family
+  element.style.fontFamily = "Courier New";
+}
+  </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <script src="script.js"></script>
+
+  <img id="myImage" src="zenitsu.jpg" alt="My Image">
+  <script>
+    // Get the image element
+var image = document.getElementById("myImage");
+
+// Read the coordinate values
+var targetX = prompt("enter X coordinate:"); // Target X coordinate
+var targetY = prompt("enter Y coordinate:"); // Target Y coordinate
+
+// Set the image position using CSS
+image.style.position = "absolute";
+image.style.left = targetX + "px";
+image.style.top = targetY + "px";
+    document.write("At ("+targetX+","+targetY+")");
+  </script>
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <img id="myImage" src="zenitsu.jpg" alt="My Image">
+
+  <script>
+    
+// Get the image element
+var image = document.getElementById("myImage");
+
+// Set the target position
+var targetX = 200; // Target X coordinate
+var targetY = 300; // Target Y coordinate
+
+// Set the initial position
+var currentX = 0; // Current X coordinate
+var currentY = 0; // Current Y coordinate
+
+// Calculate the distance to move in each step
+var moveX = (targetX - currentX) / 100; // Divide by the number of steps
+var moveY = (targetY - currentY) / 100; // Divide by the number of steps
+
+// Function to move the image gradually
+function moveImage() {
+  currentX += moveX;
+  currentY += moveY;
+
+  // Set the new position using CSS transform
+  image.style.transform = "translate(" + currentX + "px, " + currentY + "px)";
+
+  // Check if the target position is reached
+  if (Math.abs(targetX - currentX) < Math.abs(moveX) || Math.abs(targetY - currentY) < Math.abs(moveY)) {
+    clearInterval(interval);
+  }
+}
+
+// Call the moveImage function repeatedly at an interval
+var interval = setInterval(moveImage, 10);
+
+
+  </script>
+
+</body>
+
+</html> -->

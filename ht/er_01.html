@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Handling Demo</title>
+</head>
+<body>
+  <button id="btn1">Click me one!</button>
+  <button id="btn2">Click me too!</button>
+
+  <script>
+    // Get references to the buttons
+    let btn1 = document.getElementById("btn1");
+    let btn2 = document.getElementById("btn2");
+
+    // Add event handlers to the buttons
+    btn1.addEventListener("click", function() {
+      document.write("Button 1 clicked!");
+    });
+
+    btn2.addEventListener("click", function() {
+      document.write("Button 2 clicked!");
+    });
+  </script>
+</body>
+</html>

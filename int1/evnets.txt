@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        button{
+            margin: 30vw;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="fun(event) " onmousemove="fun1()" onmousedown="fun2() ">Click Me</button>
+    <script>
+        function fun(event){
+
+            console.log("the event handling on button is occured at(onclick)");
+        }
+        function fun1(event){
+
+            console.log("the event handling on button is occured at(onmousemove)");
+        }
+        function fun2(event){
+
+            console.log("the event handling on button is occured at(onmousedown)");
+        }
+    </script>
+</body>
+</html>

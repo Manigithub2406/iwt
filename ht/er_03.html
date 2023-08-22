@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mouse Event Handling Demo</title>
+</head>
+<body>
+  <div id="myDiv" style="width: 200px; height: 200px; background-color: lightblue;"></div>
+
+  <script>
+    let myDiv = document.getElementById("myDiv");
+
+    myDiv.addEventListener("mouseover", function(event) {
+      event.target.style.backgroundColor = "lightgreen";
+    });
+
+    myDiv.addEventListener("mouseout", function(event) {
+      event.target.style.backgroundColor = "lightblue";
+    });
+
+    myDiv.addEventListener("mousedown", function(event) {
+      event.target.style.backgroundColor = "yellow";
+    });
+
+    myDiv.addEventListener("mouseup", function(event) {
+      event.target.style.backgroundColor = "lightgreen";
+    });
+
+    myDiv.addEventListener("mousemove", function(event) {
+      var x = event.clientX - event.target.offsetLeft;
+      var y = event.clientY - event.target.offsetTop;
+      document.write("Mouse coordinates: x = " + x + ", y = " + y);
+    });
+  </script>
+</body>
+</html>

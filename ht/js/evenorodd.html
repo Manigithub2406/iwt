@@ -1,0 +1,59 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>even or odd</h1>
+    <input type="text" id="num">
+    <button onclick="even()">CLICK</button>
+    <script>
+        function even(){
+            var a=document.getElementById("num").value;
+            if(a%2==0){
+                document.write("its even");
+            }
+            else{
+                document.write("its odd");
+            }
+        }
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="pk_arjunreddy.jpg"  id="image">
+    <script>
+        const image=document.getElementById("image")
+        let position=0;
+        function moveImage(){
+            image.style.left=position+"px";
+            position+=1;
+
+            if (position>=350){
+                clearInterval(animationinterval);
+                setTimeout(resetimage,1000);
+            }
+        }
+        function resetimage(){
+            position=0;
+            image.style.left=position+"px";
+            startanimation();
+        }
+        function startanimation(){
+            animationinterval=setInterval(moveImage,10);
+        }
+        startanimation();
+    </script>
+</body>
+</html>

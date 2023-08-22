@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>
+            adding_content
+        </title>
+        <style>
+            table,th,td{
+                border: 4px solid rgb(35, 88, 12);
+                border-collapse: collapse;
+                padding: 20px;
+                text-align: center;
+                color: white;
+            }
+            h1,label{
+                color: white;
+            }
+        </style>
+    </head>
+    <body bgcolor="teal">
+        <center>
+            <h1><u>NAMES</u></h1>
+            <br>
+            <table id="hulala">
+                <tr>
+                    <th>FIRST NAME</th>
+                    <th>LAST NAME</th>
+                </tr>
+                <tr>
+                    <td>Mani</td>
+                    <td>Manikanta</td>
+                </tr>
+            </table>
+            <br>
+            <button onclick="unedit1()">delete first row</button>
+            <button onclick="unedit2()">delete last row</button>
+        </center>
+        <br><hr><br>
+        <form onsubmit="event.preventDefault()">
+            <label>First name :</label>
+            <input type="text" id="fn">
+            <br><br>
+            <label>Last name :</label>
+            <input type="text" id="ln">
+            <br><br>
+            <button onclick="edit()">Insert</button>
+            <input type="reset">
+            <br>
+        </form>
+        <script>
+            var t=document.getElementById("hulala");
+            function edit()
+            {
+                if(document.getElementById("ln").value=="" || document.getElementById("fn").value=="")
+                {
+                    alert("enter the data");
+                }
+                else
+                {
+                    var row=t.insertRow(-1);
+                    var x=row.insertCell(0);
+                    var y=row.insertCell(1);
+                    x.innerHTML=document.getElementById("fn").value;
+                    y.innerHTML=document.getElementById("ln").value;
+                }
+            }
+            function unedit1()
+            {
+                t.deleteRow(1);
+            }
+            function unedit2()
+            {
+                t.deleteRow(-1);
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza</title>
+    <script>
+        function total(){
+            var a= parseInt(document.getElementById("a").value)||0;
+            var b= parseInt(document.getElementById("b").value)||0;
+            var c= parseInt(document.getElementById("c").value)||0;
+            var d= parseInt(document.getElementById("d").value)||0;
+            var e= parseInt(document.getElementById("e").value)||0;
+            var f= parseInt(document.getElementById("f").value)||0;
+            var g= parseInt(document.getElementById("g").value)||0;
+            var h= parseInt(document.getElementById("h").value)||0;
+            var total=a*45+b*42+c*56+d*22+e*62+f*59+g*49+h*60;
+            document.getElementById("total").textContent = "Total: " + total;
+        
+
+        }
+    </script>
+</head>
+<style>
+    body{
+        background-image: url(pizza.png);
+        background-repeat: no-repeat;
+        background-size: 1200px 900px;
+    }
+</style>
+<center>
+<body>
+    <h2>Our Menu</h2>
+    <table border="1" style="background-color:burlywood; color:azure">
+        <thead>
+            <td>S.No</td>
+            <td>Item Name</td>
+            <td>Item Price</td>
+            <td>Quantity</td>
+        </thead>
+        <tr>
+            <td>1</td>
+            <td>Tomato Pizza</td>
+            <td>$45</td>
+            <td><textarea name="" id="a" cols="4" rows="1"></textarea></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Mushroom Pizza</td>
+            <td>$42</td>
+            <td><textarea name="" id="b" cols="4" rows="1"></textarea></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Pineapple Pizza</td>
+            <td>$56</td>
+            <td><textarea name="" id="c" cols="4" rows="1"></textarea></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Margarita Pizza</td>
+            <td>$22</td>
+            <td><textarea name="" id="d" cols="4" rows="1"></textarea></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Peppy Paneer Pizza</td>
+            <td>$62</td>
+            <td><textarea name="" id="e" cols="4" rows="1"></textarea></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>farm Fresh Veg Pizza</td>
+            <td>$59</td>
+            <td><textarea name="f" id="f" cols="4" rows="1"></textarea></td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Babycorn Pizza</td>
+            <td>$49</td>
+            <td><textarea name="g" id="g" cols="4" rows="1"></textarea></td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Fresh Extravaganza Pizza</td>
+            <td>$60</td>    
+            <td><textarea name="" id="h" cols="4" rows="1"></textarea></td>    
+        </tr>
+</table>
+<br>
+<button>Place Order</button>
+<button>Reset</button>
+<button onclick="total()">Generate Total</button>
+<p id="total" style="background-color: aliceblue; width:5%"></p>
+</body></center>
+
+    
+</body>
+</html>
